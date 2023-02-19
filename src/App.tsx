@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Technologies from "./Components/Technologies/Technologies";
+import Header from "./Components/Header/Header";
 
 function App() {
     return (
@@ -11,16 +12,6 @@ function App() {
     );
 }
 
-
-function Header() {
-    return (
-        <div>
-            <a href="#">Home</a>
-            <a href="#">News Feed</a>
-            <a href="#">Messages</a>
-        </div>
-    )
-}
 
 
 
