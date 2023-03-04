@@ -1,3 +1,35 @@
-ul li {
-  list-style-type: circle;
+.app-writer {
+  margin: 0 auto;
+  display: grid;
+  width: 1200px;
+
+
+  grid-template-areas:
+  "h h "
+  "n c";
+
+  grid-template-rows: 30px 1fr;
+  grid-template-columns: 1fr 10fr;
+  grid-gap: 10px;
+}
+
+.header {
+grid-area: h;
+  background-color: rgba(54,66,54,0.59);
+}
+.header img {
+  width: 30px;
+}
+
+.nav {
+grid-area: n;
+  background-color: rgba(149,177,170,0.59);
+}
+
+.content {
+grid-area: c;
+  background-color: cornflowerblue;
+}
+
+.content img {
 }
