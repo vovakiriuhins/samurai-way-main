@@ -14,7 +14,7 @@ import {Settings} from "./components/Settings/Settings";
 function App(): JSX.Element {
     return (
         <BrowserRouter>
-            <div className={"app-writer"}>
+            <div className={"app-wrapper"}>
                 <Header/>
                 <Navbar/>
                 <div className={"app-wrapper-content"}>
