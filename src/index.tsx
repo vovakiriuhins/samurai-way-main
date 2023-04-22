@@ -10,13 +10,13 @@ import {BrowserRouter} from "react-router-dom";
 //     addPost: (postMessage: string)=>void
 // }
 
-let _callSubscriber = () => {
+let _rerenderEntoreTree = () => {
     ReactDOM.render(
         <BrowserRouter>
             <App store={store}/>
         </BrowserRouter>, document.getElementById('root'));
 }
 
-_callSubscriber();
+_rerenderEntoreTree();
 
-store.subscribe(_callSubscriber)
+store.subscribe(_rerenderEntoreTree)
