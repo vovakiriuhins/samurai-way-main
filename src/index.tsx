@@ -5,10 +5,6 @@ import App from './App';
 import {store} from './redux/state'
 import {BrowserRouter} from "react-router-dom";
 
-// type rerenderEntireTreePropsType = {
-//     state: RootStatePropsType
-//     addPost: (postMessage: string)=>void
-// }
 
 let _rerenderEntoreTree = () => {
     ReactDOM.render(

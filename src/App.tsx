@@ -13,10 +13,7 @@ import {store, StoreType} from "./redux/state";
 
 
 type AppPropsType = {
-    // state: RootStatePropsType
     store: StoreType
-    // addPost: ()=>void
-    // updateNewPostText: (newText: string) => void
 }
 
 
@@ -33,9 +30,8 @@ const App: FC<AppPropsType> = (props) => {
                 <Navbar state={state}/>
                 <div className={"app-wrapper-content"}>
                     <Route path={'/profile'} render={ ()=> <Profile
-                        newPostText={state} postData={state}
                         store={props.store}/> }/>
-                    <Route path={'/dialogs'} render={ ()=> <Dialogs store={store} state={state}/> }/>
+                    <Route path={'/dialogs'} render={ ()=> <Dialogs store={store} /> }/>
                     <Route path={'/news'} component={News}/>
                     <Route path={'/music'} component={Music}/>
                     <Route path={'/settings'} component={Settings}/>
