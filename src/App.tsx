@@ -8,7 +8,8 @@ import {BrowserRouter, Route} from "react-router-dom";
 import {News} from "./components/News/News";
 import {Music} from "./components/Music/Music";
 import {Settings} from "./components/Settings/Settings";
-import {store, StoreType} from "./redux/state";
+import {store} from "./redux/redux-store";
+import {StoreType} from "./redux/redux-store";
 
 
 
@@ -27,7 +28,7 @@ const App: FC<AppPropsType> = (props) => {
         <BrowserRouter>
             <div className={"app-wrapper"}>
                 <Header/>
-                <Navbar state={state}/>
+                <Navbar state={props.store}/>
                 <div className={"app-wrapper-content"}>
                     <Route path={'/profile'} render={ ()=> <Profile
                         store={props.store}/> }/>
